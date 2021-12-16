@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Track</title>
+</head>
+<body>
+    <form action="/admin/addTrack" method="post">
+        <!-- Video ID -->
+        <label for="videoId">VideoId:</label>
+        <input type="text" name="videoId" id="videoId">
+        
+        <!-- Clip Onset -->
+        <label for="clipOnset">Clip Onset:</label>
+        <input type="number" name="clipOnset" id="clipOnset">
+        
+        <!-- Clip Offset -->
+        <label for="clipOffset">Clip Offset:</label>
+        <input type="number" name="clipOffset" id="clipOffset">
+        
+        <!-- Possible Classes -->
+        <label for="possibleClasses">Clip Possible Classes:</label>
+        <input type="text" name="possibleClasses[0]" id="possibleClasses">
+        <input type="text" name="possibleClasses[1]" id="possibleClasses">
+        <input type="text" name="possibleClasses[2]" id="possibleClasses">
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Add Track">
+    </form>
+</body>
+</html>
